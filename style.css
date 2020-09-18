@@ -1,0 +1,486 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    border: 10px solid black;  
+}
+
+.navbar-light .navbar-toggler {
+    outline: none;
+    box-shadow: none;
+    color: white;
+}
+
+
+
+
+@media only screen and (max-width: 425px) {
+
+    body {
+        font-family: 'Montserrat', sans-serif;
+        color: white;        
+    }
+
+
+    #navHeader {
+        display: none;
+    }
+
+    nav {
+        background-size: cover;
+        margin: 10px;
+        background-color: #0E3B43;
+        color: #FFFFFF;
+        border: 5px solid black;
+        
+
+    }
+
+    .navbar-light .navbar-nav .nav-link{
+        color: white;
+    }
+
+    .navbar-light .navbar-nav .active>.nav-link {
+        color: white;
+    }
+    .navbar-light .navbar-toggler {
+        border: 2px solid;
+        border-color:white;
+    }
+
+
+    .brandStatement {
+        background-image: url("https://i.imgur.com/LLLE3mL.jpg");
+        background-color:  #847E89;
+        background-size: cover;
+        background-position: 0px;
+        margin: 10px;
+        height: 400px;
+        display: flex;
+        align-items: center;
+    }
+    #hello {
+        margin: 50px;
+
+    }
+    .brandText {
+        color: white;
+        text-align: center;
+        font-weight: bold;
+    }
+
+
+    #myName{
+        font-size: 70px;
+        font-family: 'Great Vibes', cursive;
+        letter-spacing: 5px;
+    }
+    .aboutMe {
+        background-color: #847E89;
+        text-align: center;
+        padding: 25px;
+        margin: 10px;
+        color: white;
+    }
+    #about{
+        color: white;
+        text-align: center;
+        font-size: 30px;
+
+    }
+
+    a {
+        color: white;
+    }
+    .footer{
+        background-color: #0E3B43;
+        border: 5px solid black;
+        margin: 10px;
+        padding: 5px;
+        text-align: center;
+
+    }
+    .pclContainer{
+        margin: 10px;
+        text-align: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 10px;
+    }
+
+    .portfolio {
+        background-color: #847E89;
+        grid-column: 1 /3;
+    }
+    .contact{
+        background-color: #847E89;
+        grid-column: 1 /3;
+        width: 100%;
+    }
+
+    .language {
+        display:none;
+        background-color: #847E89;
+    }
+    .userInfo {
+        list-style: none;
+    }
+    .footer {
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+    #name, #subject, #email, #phone, #message {
+        width: 50%;
+        margin: 0px;
+        border: 2px solid #0E3B43;
+    }
+
+    #error_message{
+        margin-bottom: 20px;
+        background: #0E3B43;
+        color: white;
+        padding: 0px;
+        text-align: center;
+        font-size: 14px;
+        transition: all 0.5s ease;
+      }
+
+    .projects {
+        display:flex;
+        /* overflow: auto; */
+    }
+      
+      .card {
+        display: flex;
+        height:100px;
+        margin:0 10px;
+      }
+      
+      .card img {
+        height: 100%;
+        object-fit:cover;
+      }
+      .btn-dark {
+        margin-left: -15px;
+    }
+    .card-title{
+        display: flex;
+        font-size: 10px;
+        justify-content: center;
+      }
+
+}
+
+
+@media only screen and (min-width: 768px) {
+    body {
+        font-family: 'Montserrat', sans-serif;
+        color: white; 
+    }
+
+    nav {
+        background-size: cover;
+        margin: 10px;
+        background-color: #0E3B43;
+        color: #FFFFFF;
+        border: 5px solid black;
+
+    }
+
+    .navbar-light .navbar-nav .nav-link{
+        color: white;
+    }
+
+    .navbar-light .navbar-nav .active>.nav-link {
+        color: white;
+    }
+    .navbar-light .navbar-toggler {
+        border: 2px solid;
+        border-color:white;
+    }
+
+
+    .brandStatement {
+        background-image: url("https://i.imgur.com/LLLE3mL.jpg");
+        background-size: cover;
+        background-position: 0px;
+        margin: 10px;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+    }
+
+
+    #hello {
+        padding: 50px;
+
+    }
+    .brandText {
+        color: white;
+        text-align: center;
+        font-weight: bold;
+        
+    }
+
+    #myName{
+        padding: 25px;
+        font-size: 90px;
+        font-family: 'Great Vibes', cursive;
+        letter-spacing: 10px;
+    }
+
+    .aboutMe {
+        background-color: #847E89;
+        text-align: center;
+        padding: 25px;
+        margin: 10px;
+        color: white;
+        
+    }
+    #about{
+        color: white;
+        text-align: center;
+        font-size: 30px;
+        
+    }
+    a {
+        color: white;
+    }
+    .projects {
+        display:flex;
+    }
+    
+
+    .pclContainer{
+        margin: 10px;
+        text-align: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 10px;
+    }
+
+    .portfolio {
+        background-color: #847E89;
+        grid-column: 1 /3;
+    }
+    .contact{
+        background-color: #847E89;    }
+
+    .language {
+        background-color: #847E89;
+    }
+
+    .footer{
+        background-color: #0E3B43;
+        border: 5px solid black;
+        margin: 10px;
+        padding: 5px;
+        text-align: center;
+    }
+    #name, #subject, #email, #phone, #message {
+        width: 50%;
+        margin: 0px;
+        border: 2px solid #0E3B43;
+    }
+
+    .logoClass{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 15px;
+        color: #0E3B43;
+    }
+    .projects {
+        display:flex;
+        justify-content: center;
+    }
+    
+      
+    .card {
+        display: flex;
+        height:150px;
+        margin:0 10px;
+        
+    }
+      
+    .card img {
+        height: 100%;
+        object-fit:cover;
+    }
+
+    .card-title{
+        display: flex;
+        font-size: 10px;
+        justify-content: center;
+      }
+
+
+}
+
+@media only screen and (min-width: 1024px) {
+    body {
+        font-family: 'Montserrat', sans-serif;
+        color: white;
+        
+    }
+
+    nav {
+        background-size: cover;
+        margin: 10px;
+        background-color: #0E3B43;
+        color: #FFFFFF;
+        border: 5px solid black;
+    }
+    .navbar-expand-lg .navbar-collapse {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    #navHeader {
+        margin-left: 50px;
+        
+    }
+
+
+    .navbar-light .navbar-nav .nav-link{
+        color: white;
+        margin-left:50px;
+        
+    }
+
+    .navbar-light .navbar-nav .active>.nav-link {
+        color: white;
+        
+    }
+
+    .brandStatement {
+        background-image: url("https://i.imgur.com/LLLE3mL.jpg");
+        background-size: cover;
+        background-position: 0px;
+        margin: 10px;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        
+    }
+
+    #hello {
+        padding: 50px;
+
+    }
+    .brandText {
+        color: white;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    #myName{
+        padding: 25px;
+        font-size: 90px;
+        font-family: 'Great Vibes', cursive;
+        letter-spacing: 10px;
+    }
+
+    .aboutMe {
+        background-color: #847E89;
+        text-align: center;
+        padding: 25px;
+        margin: 10px;
+        color: white;
+    }
+    #about{
+        color: white;
+        text-align: center;
+        font-size: 30px;
+    }
+
+    a {
+        color: white;
+    }
+
+    .projects {
+        display:flex;
+    }
+
+    .pclContainer{
+        margin: 10px;
+        text-align: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 10px;
+    }
+
+    .portfolio {
+        background-color: #847E89;
+        grid-column: 1 /3;
+    }
+    .contact{
+        background-color: #847E89;    }
+
+    .language {
+        background-color: #847E89;
+    }
+
+    #name, #subject, #email, #phone, #message {
+        width: 50%;
+        margin: 0px;
+        border: 2px solid #0E3B43;
+
+    }
+
+    .logoClass{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 20px;
+        color: #0E3B43;
+    }
+
+
+    .footer{
+        background-color: #0E3B43;
+        margin: 10px;
+        padding: 5px;
+        text-align: center;
+
+    }
+
+    #name, #subject, #email, #phone, #message {
+        width: 50%;
+        cursor: pointer;
+    }
+
+    .projects {
+        display:flex;
+        justify-content: center;
+    }
+      
+      .card {
+        height:150px;
+        margin:0 10px;
+        
+      }
+      
+      .card img {
+        height: 100%;
+        object-fit:cover;
+      }
+
+      .card-title{
+        display: flex;
+        font-size: 15px;
+        justify-content: center;
+      }
+
+    
+
+}

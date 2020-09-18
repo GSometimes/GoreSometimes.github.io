@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/v4-shims.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio by Sometimes</title>
+    
+    
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light justify-content-space-between ">
+      <a class="navbar-brand" href="#">
+          <img src="https://res.cloudinary.com/dvug8hy5k/image/upload/v1600409938/Portfolio1/Black_and_White_DS_Logo_ichvu1.jpg" width="90" height="90" class="d-inline-block align-top" alt="" loading="lazy">
+        </a>
+        <h2 id="navHeader">Portfolio by Sometimes</h2>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <i id ="hamburger"class="fas fa-hamburger fa-2x"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ">
+          <li class="nav-item active ">
+            <a id ="home" class="nav-link" href="#about">About Me<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#port">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#cont">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  <div class="brandStatement">
+    <div class="brandText">
+          <p id="hello">Hello, my name is...</p>
+          <p id="myName">Gore Sometimes</p>
+          <p id="designer">I'm a designer specializing in modern UI and visual design.</p>   
+      </div>
+  </div>
+  <div class="aboutMe">
+      <h3 id="about">About Me</h3>
+      <p id="paragraph">I want to start by saying if you made it here then it must be for a reason and I thank you for taking the time to view my portfolio, 
+        I would love the opportunity to work with you and I hope to hear from you. I am a father, foodie, and wino who’s always looking to make lasting memories. My son is my motivation, my “why” and the reason I do what I do at the level I do it. 
+        I am a Chef turned Designer. I am a self-motivated creative mind looking to make the world a prettier place, one design at a time, so please reach out and let’s make the world a prettier place together.</p>
+  </div>
+  <div class="pclContainer">
+    <section class="portfolio">
+      <p id="port"><h3><a href="">Portfolios</a></h3></p>
+
+      <div class="projects"></div>
+
+    </section>
+    <section class="language">
+      <p><h3><a href="">Languages</a></h3></p>
+      <div class="logoClass">
+        <i class="fab fa-html5 fa-5x"></i>
+        <i class="fab fa-css3-alt fa-5x"></i>
+        <i class="fab fa-js-square fa-5x"></i>
+        <i class="fab fa-python fa-5x"></i>
+        <i class="fab fa-bootstrap fa-5x"></i>
+        <i class="fab fa-react fa-5x"></i>
+      </div>
+    </section>
+
+    <section class="contact">
+      <p id="cont"><h3><a href="">Contact</a></h3></p>
+      <div class="formStyle">
+        <div class="contactForm">
+          <p id ="inTouch">Get in Touch!</p>
+          <div id="error_message"></div>
+        <form action="" id="myform" onsubmit = "return validate();">
+          <div class="input_field">
+            <input type="text" placeholder="Name" id="name">
+          </div>
+          <div class="input_field">
+            <input type="text" placeholder="Subject" id="subject">
+          </div>
+          <div class="input_field">
+            <input type="text" placeholder="Phone" id="phone">
+          </div>
+          <div class="input_field">
+            <input type="text" placeholder="Email" id="email">
+          </div>
+          <div class="input_field">
+            <textarea placeholder="Message" id="message"></textarea>
+          </div>
+          <div class="btn">
+            <button type="button" class="btn btn-dark">Submit</button>    
+    </section>
+  </div>
+
+
+  <div class="footer">
+      <p>© Designs by Sometimes 2020 | <a href="mailto:gsometimes@outlook.com" target="_blank" rel="noopener noreferrer">Email</a> | <a href="https://www.linkedin.com/in/gore-sometimes/">LinkedIn</a</p>
+  </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+<script src="app.js" charset="utf-8"></script>
+
+
+</body>
+
+
+</html>
